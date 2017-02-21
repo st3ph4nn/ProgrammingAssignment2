@@ -31,7 +31,7 @@ cacheSolve <- function(x, ...) {
         data <- x$get()
         ##calculate new inverse matrix and store it in im
         im <- solve(data)
-        ## set new im as 'setsolve'.
+        ## set new calculated in parent environment.
         x$setsolve(im)
         ## print im
         im
